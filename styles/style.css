@@ -3,3 +3,14 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+.title__topic {
+
+}
+.title__topic-accent {
+background-color: var();
+}
+
+.title__subtopic-accent {
+background-color: var();
+}

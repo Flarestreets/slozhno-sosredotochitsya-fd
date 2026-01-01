@@ -2,6 +2,22 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+
+:root {
+  --header-title-color: #DB00FF; /*  цвет текста заголовка страницы */
+  --title-topic-color: #FF0070; /* цвет текста заголовка */
+  --accent-title-topic-color: #000028; /* цвет текста акцентного заголовка */
+  --section-text-color: #F1B2CE; /* цвет текста топиков */
+  --accent-color: #FF0070; /* акцент; тень; фон */
+
+  --button-text-color: #FF0070; /* цвет текста кнопки */
+  --button-outline-color: #FF0070; /* цвет обводки кнопки */
+  --hover-color: rgb(255 0 112 / 40%); /* цвет при наведении */
   
+
+  --page-background-image: url(../images/cover-image-dark.png); /* фоновая картинка страницы */
+  --page-background-color: #000028; /* цвет фона страницы */
+  --font-family: 'IBM Plex mono', monospace; /* шрифт страницы */
+
+  --REC: flex;
 }
