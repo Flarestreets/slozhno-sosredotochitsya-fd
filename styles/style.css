@@ -1,16 +1,140 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--page-background-image);
+  background-color: var(--page-background-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-inline: 10px;
+  font-family: var(--font-family, 'IBM Plex mono', monospace);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  padding-block: 15px;
+  justify-content: center;
+  position: relative;
+  margin-block-end: 40px;
+}
+
+.header__theme-menu {
+  color: var(--accent-color, #FF0070);
+  justify-self: end;
+  padding-block-end: 7px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.header__theme-menu-button {
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 18px;
+  color: var(--button-text-color, #FF0070);
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  padding: 2px 13px 5px 13px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  line-height: 83%;
+  color: var(--main-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+}
+
+.header__description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4;
+  justify-self: start;
+  align-self: center;
+  width: clamp(355px, 47%, 364px);
+}
+
+.decorated-item {
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  top: 8px;
+  right: 10px;
+  display: var(--decorated-item-display, flex);
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+}
+
+.decorated-item::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #FF0070);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 0;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  border-left: 1px solid var(--accent-color, #FF0070);
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  left: 0;
 }
 
 .title__topic {
-
+color: var(--topic-title-color, #FF0070);
+weight: 700;
+font-size: 18px;
+line-height: 23.4px;
 }
+
 .title__topic-accent {
-background-color: var();
+background-color: var(--accent-color, #FF0070);
+color: var(--topic-accented-title-color, #000028);
+weight: 700;
+font-size: 18px;
+line-height: 23.4px;
 }
 
 .title__subtopic-accent {
-background-color: var();
+background-color: var(--accent-color, #FF0070);
+color: var(--topic-accented-title-color, #000028);
+font-weight: 400px;
+font-size: 18px;
+line-height: 23.4px;
+}
+
+.section__list-item-text {
+  color: var(--topic-text-color, #F1B2CE); 
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
