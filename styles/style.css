@@ -27,8 +27,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-top: 1px solid var(--accent-color, #FF0070);
-  border-right: 1px solid var(--accent-color, #FF0070);
+  border-top: 1px solid var(--decorated-corners-color, #FF0070);
+  border-right: 1px solid var(--decorated-corners-color, #FF0070);
   width: 25px;
   height: 25px;
   top: 10px;
@@ -38,8 +38,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-bottom: 1px solid var(--accent-color, #FF0070);
-  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--decorated-corners-color, #FF0070);
+  border-left: 1px solid var(--decorated-corners-color, #FF0070);
   width: 25px;
   height: 25px;
   bottom: 10px;
@@ -91,6 +91,25 @@
   border: none;
   padding: 2px 13px 5px 13px;
 }
+
+.header__theme-menu-button_active {
+outline: 1px solid var(--button-outline-color);
+pointer-events: none
+}
+
+.header__theme-menu-button:hover {
+outline: 1px solid var(--button-hover-color);
+cursor: pointer;
+}
+
+.header__theme-menu-button:focus-visible {
+box-shadow: 0 1px 0 0 var(--button-outline-color);
+}
+
+.header__theme-menu-button:focus {
+outline: none;
+}
+
 .heading {
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
@@ -150,22 +169,22 @@ font-weight: 400;
    margin-block-end: 10px;
 }
 /* ссылки*/
-.link {
+.text__link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.link:hover {
+.text__link:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--topic__text-color);
+  box-shadow: 0 1px 0 0 var(--topic-text-color);
 }
 
-.link:focus {
+.text__link:focus {
   outline: none;
 }
 
-.link:focus-visible {
-  outline: 1px solid var(--topic__text-color);
+.text__link:focus-visible {
+  outline: 1px solid var(--topic-text-color);
 }
 
 .section__content {

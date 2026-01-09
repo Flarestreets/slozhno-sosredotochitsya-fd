@@ -9,4 +9,21 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --main-title-color: #FFC2E6; /*  цвет текста заголовка страницы */
+  --topic-title-color: #353430; /* цвет текста заголовка */
+  --topic-accented-title-color: #353430; /* цвет текста акцентного заголовка */
+  --topic-text-color: #353430; /* цвет текста топиков */
+  --accent-color: #FF8DCB; /* акцент; тень; фон */
+
+  --button-text-color: #353430; /* цвет текста кнопки */
+  --button-hover-color: rgb(50 49 45 / 40%); /* цвет при наведении */
+  --button-outline-color: #353430;
+  
+
+  --page-background-image: url(../images/cover-image-light.png); /* фоновая картинка страницы */
+  --page-background-color: #FFF1F7;; /* цвет фона страницы */
+  --font-family: 'IBM Plex mono', monospace; /* шрифт страницы */
+
+  --decorated-item-display: none;
+  --decorated-corners-color: #353430;
 }
