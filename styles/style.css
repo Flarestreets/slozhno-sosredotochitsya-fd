@@ -103,33 +103,23 @@
 .header__description {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23.4;
+  line-height: 23.4px;
   justify-self: start;
   align-self: center;
   width: clamp(355px, 47%, 364px);
 }
 
-.title__topic-accent {
+.title__accent {
 background-color: var(--accent-color, #FF0070);
 color: var(--topic-accented-title-color, #000028);
-weight: 700;
-font-size: 18px;
-line-height: 23.4px;
 }
 
-.title__topic {
+.title__no-accent {
 color: var(--topic-title-color, #FF0070);
-weight: 700;
-font-size: 18px;
-line-height: 23.4px;
 }
 
-.title__subtopic-accent {
-background-color: var(--accent-color, #FF0070);
-color: var(--topic-accented-title-color, #000028);
-font-weight: 400px;
-font-size: 18px;
-line-height: 23.4px;
+.font__weight-standart {
+font-weight: light;
 }
 
 .section__list-item:not(:last-child) {
@@ -139,6 +129,12 @@ line-height: 23.4px;
 .section__list-item-text {
   color: var(--topic-text-color, #F1B2CE); 
   font-weight: 400px;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.section__list-item-title, .section__title {
+font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
 }
