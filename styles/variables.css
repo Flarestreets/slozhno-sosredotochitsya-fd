@@ -12,13 +12,13 @@
 
   --button-text-color: #FF0070; /* цвет текста кнопки */
   --button-hover-color: rgb(255 0 112 / 40%); /* цвет при наведении */
-  --button-outline-color: #FF0070;
+  --button-outline-color: #FF0070; /* outline кнопки*/
   
 
   --page-background-image: url(../images/cover-image-dark.png); /* фоновая картинка страницы */
   --page-background-color: #000028; /* цвет фона страницы */
   --font-family: 'IBM Plex mono', monospace; /* шрифт страницы */
 
-  --decorated-item-display: flex;
-  --decorated-corners-color: #FF0070;
+  --decorated-item-display: flex; /*декоративный элемент*/
+  --decorated-corners-color: #FF0070; /*декоративные уголки*/
 }

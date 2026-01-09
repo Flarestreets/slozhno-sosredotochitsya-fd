@@ -93,17 +93,17 @@
 }
 
 .header__theme-menu-button_active {
-outline: 1px solid var(--button-outline-color);
+outline: 1px solid var(--button-outline-color, #FF0070);
 pointer-events: none
 }
 
-.header__theme-menu-button:hover {
-outline: 1px solid var(--button-hover-color);
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+outline: 1px solid var(--button-hover-color, #FF0070);
 cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
-box-shadow: 0 1px 0 0 var(--button-outline-color);
+box-shadow: 0 1px 0 0 var(--button-outline-color, #FF0070);
 }
 
 .header__theme-menu-button:focus {
@@ -171,12 +171,12 @@ font-weight: 400;
 /* ссылки*/
 .text__link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
 }
 
 .text__link:hover {
   cursor: pointer;
-  box-shadow: 0 1px 0 0 var(--topic-text-color);
+  box-shadow: 0 1px 0 0 var(--topic-text-color, #F1B2CE);
 }
 
 .text__link:focus {
@@ -184,7 +184,7 @@ font-weight: 400;
 }
 
 .text__link:focus-visible {
-  outline: 1px solid var(--topic-text-color);
+  outline: 1px solid var(--topic-text-color, #F1B2CE);
 }
 
 .section__content {

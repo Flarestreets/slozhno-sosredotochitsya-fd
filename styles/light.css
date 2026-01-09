@@ -17,13 +17,13 @@
 
   --button-text-color: #353430; /* цвет текста кнопки */
   --button-hover-color: rgb(50 49 45 / 40%); /* цвет при наведении */
-  --button-outline-color: #353430;
+  --button-outline-color: #353430; /* outline кнопки*/
   
 
   --page-background-image: url(../images/cover-image-light.png); /* фоновая картинка страницы */
   --page-background-color: #FFF1F7;; /* цвет фона страницы */
   --font-family: 'IBM Plex mono', monospace; /* шрифт страницы */
 
-  --decorated-item-display: none;
-  --decorated-corners-color: #353430;
+  --decorated-item-display: none; /*декоративный элемент*/
+  --decorated-corners-color: #353430; /*декоративные уголки*/
 }
