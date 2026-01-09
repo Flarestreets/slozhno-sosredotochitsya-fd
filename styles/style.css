@@ -91,12 +91,14 @@
   border: none;
   padding: 2px 13px 5px 13px;
 }
-
-.header__title {
+.heading {
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
   color: var(--main-title-color);
+}
+
+.header__heading {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
 }
 
@@ -193,10 +195,6 @@ font-weight: 400;
   min-height: 668px;
 }
 
-.footer__title {
-  font-weight: 700;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  line-height: 83%;
-  color: var(--main-title-color);
+.footer__heading {
   text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
 }
