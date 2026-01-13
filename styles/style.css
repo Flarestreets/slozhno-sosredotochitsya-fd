@@ -9,7 +9,7 @@
   padding-inline: 10px;
   font-family: var(--font-family, 'IBM Plex mono', monospace);
   background-repeat: no-repeat;
-  height: 100vh;
+  block-size: 100vh;
 }
 
 @media(min-width: 768px) {
@@ -19,8 +19,8 @@
 } 
 
 .header {
-  height: 100vh;
-  min-height: 668px;
+  block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -32,7 +32,7 @@
 
 @media(min-width: 768px) {
   .header {
-    min-height: 768px;
+    min-block-size: 768px;
     padding-block: 23px;
     justify-content: normal;
     margin-block-end: 59px;
@@ -51,8 +51,8 @@
   position: absolute;
   border-top: 1px solid var(--decorated-corners-color, #FF0070);
   border-right: 1px solid var(--decorated-corners-color, #FF0070);
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   top: 10px;
   right: 0;
 }
@@ -68,8 +68,8 @@
   position: absolute;
   border-bottom: 1px solid var(--decorated-corners-color, #FF0070);
   border-left: 1px solid var(--decorated-corners-color, #FF0070);
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   bottom: 10px;
   left: 0;
 }
@@ -109,8 +109,8 @@
 
 .decorated-item::after {
   content: '';
-  width: 6px;
-  height: 6px;
+  inline-size: 6px;
+  block-size: 6px;
   border-radius: 50%;
   box-shadow: 0 0 4px 4px var(--accent-color, #FF0070);
   background-color: var(--accent-color, #FF0070);
@@ -158,21 +158,21 @@
 }
 
 .header__theme-menu-button_active {
-outline: 1px solid var(--button-outline-color, #FF0070);
-pointer-events: none
+  outline: 1px solid var(--button-outline-color, #FF0070);
+  pointer-events: none
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-outline: 1px solid var(--button-hover-color, #FF0070);
-cursor: pointer;
+  outline: 1px solid var(--button-hover-color, #FF0070);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
-box-shadow: 0 1px 0 0 var(--button-outline-color, #FF0070);
+  box-shadow: 0 1px 0 0 var(--button-outline-color, #FF0070);
 }
 
 .header__theme-menu-button:focus {
-outline: none;
+  outline: none;
 }
 
 .heading {
@@ -215,9 +215,9 @@ outline: none;
 }
 
 @media(min-width: 1024px) {
-.header__description{ 
-  max-width: 491px;
-}
+  .header__description{ 
+    max-inline-size: 491px;
+  }
 }
 
 .main {
@@ -239,7 +239,7 @@ outline: none;
     gap: 20px
   }
   .section__content:nth-child(2) > .section__title {
-    max-width: 236px;
+    max-inline-size: 236px;
   }
 
   .section__content:nth-child(2) > .section__list {
@@ -254,7 +254,7 @@ outline: none;
   }
 
   .section__content:nth-child(2) > .section__title {
-    max-width: 315px;
+    max-inline-size: 315px;
   }
   .section__content:nth-child(2) > .section__list {
     display: grid;
@@ -268,14 +268,13 @@ outline: none;
 }
 
 .section__title, .section__list-item-title {
-font-weight: 700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
 }
 
-
 .title__no-accent {
-color: var(--topic-title-color, #FF0070);
+  color: var(--topic-title-color, #FF0070);
 }
 
 .section__list-item:not(:last-child) {
@@ -287,8 +286,8 @@ color: var(--topic-title-color, #FF0070);
 }
 
 .title__accent {
-background-color: var(--accent-color, #FF0070);
-color: var(--topic-accented-title-color, #000028);
+  background-color: var(--accent-color, #FF0070);
+  color: var(--topic-accented-title-color, #000028);
 }
 
 .section__list-item-text {
@@ -317,7 +316,7 @@ color: var(--topic-accented-title-color, #000028);
 }
 
 .font__weight-standart {
-font-weight: 400;
+  font-weight: 400;
 }
 
 .title__gallery{
@@ -394,7 +393,7 @@ font-weight: 400;
 
 @media(min-width: 768px) {
   .footer {
-    margin-top: 60px;
+    margin-block-start: 60px;
   }
 }
 
