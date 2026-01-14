@@ -292,7 +292,7 @@
 
 .section__list-item-text {
   color: var(--topic-text-color, #F1B2CE); 
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
 }
