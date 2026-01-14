@@ -162,7 +162,7 @@
   pointer-events: none
 }
 
-.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--button-hover-color, #FF0070);
   cursor: pointer;
 }
@@ -204,13 +204,13 @@
   line-height: 23.4px;
   justify-self: start;
   align-self: center;
-  max-width: 355px;
+  max-inline-size: 355px;
 }
 
 @media(min-width: 768px) {
   .header__description{ 
     justify-self: end;
-    max-width: 364px;
+    max-inline-size: 364px;
   }
 }
 
@@ -233,30 +233,30 @@
 }
 
 @media(min-width: 768px) {
-  .section__content:nth-child(2n+1) {
+  .section__problem, .section__solutions {
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px
   }
-  .section__content:nth-child(2) > .section__title {
+  .section__factors > .section__title {
     max-inline-size: 236px;
   }
 
-  .section__content:nth-child(2) > .section__list {
+  .section__factors > .section__list {
     grid-column: 2 / span 2;
   }
 }
 
 @media(min-width: 1024px) {
-  .section__content:nth-child(2n+1) {
+  .section__problem, .section__solutions {
     grid-template-columns: 315px 1fr;
     gap: 20px
   }
 
-  .section__content:nth-child(2) > .section__title {
+  .section__factors > .section__title {
     max-inline-size: 315px;
   }
-  .section__content:nth-child(2) > .section__list {
+  .section__factors > .section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -303,7 +303,6 @@
 }
 
 .text__link:hover {
-  cursor: pointer;
   box-shadow: 0 1px 0 0 var(--topic-text-color, #F1B2CE);
 }
 
@@ -339,36 +338,28 @@
 
 @media (min-width: 768px) {
   .gallery__list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 318px;
     gap: 20px;
     margin-block-end: 0;
   }
 }
 
-@media (min-width: 1024px) {
-  .gallery__list {
-    grid-template-rows: 260px 315px 433px
-  }
-}
-
 @media (min-width: 768px) {
-  .gallery__list-item:nth-child(1) {
+  .item__sunset {
     grid-column: 1 / span 2;
   }
 
-  .gallery__list-item:nth-child(2) {
+  .item__ice-cream {
     grid-column: 3;
     grid-row: 1 / span 2;
   }
 
-  .gallery__list-item:nth-child(3) {
+  .item__tape {
     grid-column: 1;
     grid-row: 2 / span 2;
   }
 
-  .gallery__list-item:nth-child(5) {
+  .item__street {
     grid-column: 2 / span 2;
     grid-row: 3;
   }
@@ -379,6 +370,7 @@
   inline-size: 100%;
   object-fit: cover;
   display: block;
+  object-position: center;
 }
 
 .footer {
